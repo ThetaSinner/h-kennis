@@ -1,0 +1,21 @@
+---
+manifest_version: "1"
+name: kennis
+integrity:
+  network_seed: ~
+  properties: ~
+  origin_time: 1696463253793216
+  zomes:
+    - name: document_integrity
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/document_integrity.wasm"
+      dependencies: ~
+      dylib: ~
+coordinator:
+  zomes:
+    - name: document
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/document.wasm"
+      dependencies:
+        - name: document_integrity
+      dylib: ~

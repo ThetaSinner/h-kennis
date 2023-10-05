@@ -1,0 +1,18 @@
+---
+manifest_version: "1"
+name: kennis
+description: ~
+roles:
+  - name: kennis
+    provisioning:
+      strategy: create
+      deferred: false
+    dna:
+      bundled: "../dnas/kennis/workdir/kennis.dna"
+      modifiers:
+        network_seed: ~
+        properties: ~
+        origin_time: ~
+        quantum_time: ~
+      installed_hash: ~
+      clone_limit: 0
