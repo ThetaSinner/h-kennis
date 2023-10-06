@@ -1,1 +1,8 @@
 .cargo
+target
+node_modules
+.hc
+.hc_live_*
+*.happ
+*.webhapp
+*.dna

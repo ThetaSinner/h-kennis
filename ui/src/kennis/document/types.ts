@@ -35,4 +35,14 @@ export type DocumentSignal = {
   link_type: string;
 };
 
-export type EntryTypes = {};
+export type EntryTypes =
+ | ({  type: 'Document'; } & Document);
+
+
+
+export interface Document { 
+  title: string;
+
+  content: string;
+}
+
